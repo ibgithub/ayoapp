@@ -1,0 +1,154 @@
+{
+    "fluentMethods": true,
+    "relationships": [],
+    "fields": [
+        {
+            "fieldName": "kodeProduk",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "hpTujuan",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "hpMember",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "hargaBeli",
+            "fieldType": "BigDecimal"
+        },
+        {
+            "fieldName": "hpp",
+            "fieldType": "BigDecimal"
+        },
+        {
+            "fieldName": "laba",
+            "fieldType": "BigDecimal"
+        },
+        {
+            "fieldName": "com",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "admrpt",
+            "fieldType": "BigDecimal"
+        },
+        {
+            "fieldName": "ulang",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "ulangTgl",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "fisik",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "manual",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "switch1",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "kodeGagal",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "waitSms",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "head2Head",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "hpPembeli",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "beaAdmin",
+            "fieldType": "BigDecimal"
+        },
+        {
+            "fieldName": "isReport",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "suplierKe",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "idDistributor",
+            "fieldType": "Long"
+        },
+        {
+            "fieldName": "sn",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "ip",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "pesankirim",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "metode",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "toDistributor",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "idPortip",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "timeupdate",
+            "fieldType": "ZonedDateTime"
+        },
+        {
+            "fieldName": "idDistributorOld",
+            "fieldType": "Long"
+        },
+        {
+            "fieldName": "idDistributorProduk",
+            "fieldType": "Long"
+        },
+        {
+            "fieldName": "saldoSup",
+            "fieldType": "BigDecimal"
+        },
+        {
+            "fieldName": "isrebate",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "enginename",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "typemsg",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "isro",
+            "fieldType": "Integer"
+        }
+    ],
+    "changelogDate": "20170904090048",
+    "dto": "no",
+    "service": "serviceImpl",
+    "entityTableName": "transaksi_pulsa",
+    "jpaMetamodelFiltering": true,
+    "pagination": "pager",
+    "microserviceName": "ayoapp",
+    "searchEngine": "elasticsearch"
+}

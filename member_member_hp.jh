@@ -1,0 +1,56 @@
+entity Member {
+  idMember String required,
+  tglRegister ZonedDateTime,
+  nama String,
+  alamat String,
+  pin String,
+  status Integer,
+  saldo String,
+  idUpline String,
+  kodeLevel String,
+  tglInput ZonedDateTime,
+  userInput String,
+  tglUpdate ZonedDateTime,
+  userUpdate String,
+  idMaster String,
+  rptTrx Integer,
+  selisih BigDecimal,
+  counter Integer,
+  dongleNo String,
+  head2head Integer,
+  ymid String,
+  iprpt String,
+  lastTrx ZonedDateTime,
+  ref String,
+  crypt String,
+  gtalkid String,
+  vremsgid String,
+  kodepos String,
+  iswarn Integer,
+  msnid String,
+  idlogsal Long,
+  lastKodetrx Long,
+  lastIdtrx Long,
+  telebotid String,
+  telegramid String,
+  isowner Long,
+  cryptowner String,
+  pinowner String
+}
+
+entity MemberHp {
+  idMember String required,
+  hp String,
+  typeim Long,
+  istrx Long,
+  crypt String,
+  typemsg Long
+}
+
+relationship OneToMany {
+	Member{memberMemberHp} to MemberHp{member(idMember)}
+}
+
+paginate * with pagination
+dto * with mapstruct
+service all with serviceImpl

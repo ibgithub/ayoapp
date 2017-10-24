@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd
+                        http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+
+    <property name="now" value="now()" dbms="h2"/>
+
+    <property name="now" value="now()" dbms="mysql"/>
+    <property name="autoIncrement" value="true"/>
+
+    <property name="floatType" value="float4" dbms="postgresql, h2"/>
+    <property name="floatType" value="float" dbms="mysql, oracle, mssql"/>
+
+    <!--
+        Added the entity TransaksiPulsa.
+    -->
+    <changeSet id="20170904090048-1" author="jhipster">
+        <createTable tableName="transaksi_pulsa">
+            <column name="id" type="bigint" autoIncrement="${autoIncrement}">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="kode_produk" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="hp_tujuan" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="hp_member" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="harga_beli" type="decimal(10,2)">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="hpp" type="decimal(10,2)">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="laba" type="decimal(10,2)">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="com" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="admrpt" type="decimal(10,2)">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="ulang" type="integer">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="ulang_tgl" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="fisik" type="integer">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="manual" type="integer">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="switch_1" type="integer">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="kode_gagal" type="integer">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="wait_sms" type="integer">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="head_2_head" type="integer">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="hp_pembeli" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="bea_admin" type="decimal(10,2)">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="is_report" type="integer">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="suplier_ke" type="integer">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="id_distributor" type="bigint">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="sn" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="ip" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="pesankirim" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="metode" type="integer">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="to_distributor" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="id_portip" type="integer">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="timeupdate" type="timestamp">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="id_distributor_old" type="bigint">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="id_distributor_produk" type="bigint">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="saldo_sup" type="decimal(10,2)">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="isrebate" type="integer">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="enginename" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="typemsg" type="integer">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="isro" type="integer">
+                <constraints nullable="true" />
+            </column>
+
+            <!-- jhipster-needle-liquibase-add-column - JHipster will add columns here, do not remove-->
+        </createTable>
+        <dropDefaultValue tableName="transaksi_pulsa" columnName="timeupdate" columnDataType="datetime"/>
+        
+    </changeSet>
+    <!-- jhipster-needle-liquibase-add-changeset - JHipster will add changesets here, do not remove-->
+</databaseChangeLog>

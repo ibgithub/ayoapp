@@ -1,0 +1,58 @@
+{
+    "fluentMethods": true,
+    "relationships": [],
+    "fields": [
+        {
+            "fieldName": "idMember",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "saldo",
+            "fieldType": "BigDecimal"
+        },
+        {
+            "fieldName": "act",
+            "fieldType": "BigDecimal"
+        },
+        {
+            "fieldName": "tgl",
+            "fieldType": "ZonedDateTime"
+        },
+        {
+            "fieldName": "ket",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "ref",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "tkode",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "kodetrx",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "msg",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "userInput",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "isstok",
+            "fieldType": "Integer"
+        }
+    ],
+    "changelogDate": "20170904083226",
+    "dto": "no",
+    "service": "serviceImpl",
+    "entityTableName": "log_saldo",
+    "jpaMetamodelFiltering": true,
+    "pagination": "pager",
+    "microserviceName": "ayoapp",
+    "searchEngine": "elasticsearch"
+}

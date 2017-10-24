@@ -1,0 +1,62 @@
+{
+    "fluentMethods": true,
+    "relationships": [],
+    "fields": [
+        {
+            "fieldName": "tglTransaksi",
+            "fieldType": "ZonedDateTime"
+        },
+        {
+            "fieldName": "idMember",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "nama",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "jml",
+            "fieldType": "BigDecimal"
+        },
+        {
+            "fieldName": "kodeTrx",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "status",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "saldoAwal",
+            "fieldType": "BigDecimal"
+        },
+        {
+            "fieldName": "saldoAkhir",
+            "fieldType": "BigDecimal"
+        },
+        {
+            "fieldName": "ket",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "tglInput",
+            "fieldType": "ZonedDateTime"
+        },
+        {
+            "fieldName": "userInput",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "isstok",
+            "fieldType": "Integer"
+        }
+    ],
+    "changelogDate": "20170904085030",
+    "dto": "no",
+    "service": "serviceImpl",
+    "entityTableName": "transaksi",
+    "jpaMetamodelFiltering": true,
+    "pagination": "pager",
+    "microserviceName": "ayoapp",
+    "searchEngine": "elasticsearch"
+}

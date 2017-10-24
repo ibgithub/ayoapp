@@ -1,0 +1,22 @@
+{
+    "fluentMethods": true,
+    "relationships": [],
+    "fields": [
+        {
+            "fieldName": "metode",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "ket",
+            "fieldType": "String"
+        }
+    ],
+    "changelogDate": "20170904015628",
+    "dto": "no",
+    "service": "serviceImpl",
+    "entityTableName": "koneksi",
+    "jpaMetamodelFiltering": false,
+    "pagination": "pager",
+    "microserviceName": "ayoapp",
+    "searchEngine": "elasticsearch"
+}

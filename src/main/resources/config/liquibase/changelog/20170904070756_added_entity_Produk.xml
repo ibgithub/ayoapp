@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd
+                        http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+
+    <property name="now" value="now()" dbms="h2"/>
+
+    <property name="now" value="now()" dbms="mysql"/>
+    <property name="autoIncrement" value="true"/>
+
+    <property name="floatType" value="float4" dbms="postgresql, h2"/>
+    <property name="floatType" value="float" dbms="mysql, oracle, mssql"/>
+
+    <!--
+        Added the entity Produk.
+    -->
+    <changeSet id="20170904070756-1" author="jhipster">
+        <createTable tableName="produk">
+            <column name="id" type="bigint" autoIncrement="${autoIncrement}">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="id_produk" type="integer">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="kode_produk" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="id_kartu" type="integer">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="denom" type="decimal(10,2)">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="hpp" type="decimal(10,2)">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="harga_man" type="decimal(10,2)">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="status" type="integer">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="gangguan" type="integer">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="id_distributor" type="bigint">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="fisik" type="integer">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="tgl_update" type="timestamp">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="user_update" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="id_distributor_2" type="bigint">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="konversi_saldo" type="decimal(10,2)">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="isreport" type="integer">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="issplit" type="integer">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="ototimeopen" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="ototimeclose" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="id_distributor_3" type="bigint">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="isstok" type="integer">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="otoclosestatus" type="integer">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="saldo_min" type="decimal(10,2)">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="akses" type="integer">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="hlr" type="integer">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="isulang" type="integer">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="isurut" type="integer">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="formatppob" type="integer">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="jenisppob" type="integer">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="ketproduk" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+
+            <!-- jhipster-needle-liquibase-add-column - JHipster will add columns here, do not remove-->
+        </createTable>
+        <dropDefaultValue tableName="produk" columnName="tgl_update" columnDataType="datetime"/>
+        
+    </changeSet>
+    <!-- jhipster-needle-liquibase-add-changeset - JHipster will add changesets here, do not remove-->
+</databaseChangeLog>

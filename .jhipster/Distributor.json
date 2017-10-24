@@ -1,0 +1,158 @@
+{
+    "fluentMethods": true,
+    "relationships": [],
+    "fields": [
+        {
+            "fieldName": "idDistributor",
+            "fieldType": "Long"
+        },
+        {
+            "fieldName": "nama",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "status",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "kodeId",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "pin",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "com",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "noKontak",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "metode",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "kodeParsing",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "kodeParsing2",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "replyno",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "tglInput",
+            "fieldType": "ZonedDateTime"
+        },
+        {
+            "fieldName": "userInput",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "tglUpdate",
+            "fieldType": "ZonedDateTime"
+        },
+        {
+            "fieldName": "userUpdate",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "ip",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "isvre",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "isgtw",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "ugtw",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "isfilter",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "parseSaldo",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "parseHarga",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "tiketWrap",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "istiketsend",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "pesanTiket",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "saldoSupwarn",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "issortby",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "parseUnit",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "isulangim",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "ishlr",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "kodeParsing3",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "idHistory",
+            "fieldType": "Long"
+        },
+        {
+            "fieldName": "kodeParsing4",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "selisihSupwarn",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "timeon",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "timeoff",
+            "fieldType": "String"
+        }
+    ],
+    "changelogDate": "20170904015454",
+    "dto": "no",
+    "service": "serviceImpl",
+    "entityTableName": "distributor",
+    "jpaMetamodelFiltering": true,
+    "pagination": "pager",
+    "microserviceName": "ayoapp",
+    "searchEngine": "elasticsearch"
+}

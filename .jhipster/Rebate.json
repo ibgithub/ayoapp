@@ -1,0 +1,46 @@
+{
+    "fluentMethods": true,
+    "relationships": [],
+    "fields": [
+        {
+            "fieldName": "idTransaksi",
+            "fieldType": "Long"
+        },
+        {
+            "fieldName": "jml",
+            "fieldType": "BigDecimal"
+        },
+        {
+            "fieldName": "hargaProduk",
+            "fieldType": "BigDecimal"
+        },
+        {
+            "fieldName": "idMember",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "level",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "bulan",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "tahun",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "status",
+            "fieldType": "Integer"
+        }
+    ],
+    "changelogDate": "20170904090407",
+    "dto": "no",
+    "service": "serviceImpl",
+    "entityTableName": "rebate",
+    "jpaMetamodelFiltering": true,
+    "pagination": "pager",
+    "microserviceName": "ayoapp",
+    "searchEngine": "elasticsearch"
+}

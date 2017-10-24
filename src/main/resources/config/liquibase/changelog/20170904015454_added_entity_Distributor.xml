@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd
+                        http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+
+    <property name="now" value="now()" dbms="h2"/>
+
+    <property name="now" value="now()" dbms="mysql"/>
+    <property name="autoIncrement" value="true"/>
+
+    <property name="floatType" value="float4" dbms="postgresql, h2"/>
+    <property name="floatType" value="float" dbms="mysql, oracle, mssql"/>
+
+    <!--
+        Added the entity Distributor.
+    -->
+    <changeSet id="20170904015454-1" author="jhipster">
+        <createTable tableName="distributor">
+            <column name="id" type="bigint" autoIncrement="${autoIncrement}">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="id_distributor" type="bigint">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="nama" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="status" type="integer">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="kode_id" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="pin" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="com" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="no_kontak" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="metode" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="kode_parsing" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="kode_parsing_2" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="replyno" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="tgl_input" type="timestamp">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="user_input" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="tgl_update" type="timestamp">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="user_update" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="ip" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="isvre" type="integer">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="isgtw" type="integer">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="ugtw" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="isfilter" type="integer">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="parse_saldo" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="parse_harga" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="tiket_wrap" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="istiketsend" type="integer">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="pesan_tiket" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="saldo_supwarn" type="integer">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="issortby" type="integer">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="parse_unit" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="isulangim" type="integer">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="ishlr" type="integer">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="kode_parsing_3" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="id_history" type="bigint">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="kode_parsing_4" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="selisih_supwarn" type="integer">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="timeon" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="timeoff" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+
+            <!-- jhipster-needle-liquibase-add-column - JHipster will add columns here, do not remove-->
+        </createTable>
+        <dropDefaultValue tableName="distributor" columnName="tgl_input" columnDataType="datetime"/>
+        <dropDefaultValue tableName="distributor" columnName="tgl_update" columnDataType="datetime"/>
+        
+    </changeSet>
+    <!-- jhipster-needle-liquibase-add-changeset - JHipster will add changesets here, do not remove-->
+</databaseChangeLog>

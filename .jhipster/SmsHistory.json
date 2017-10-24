@@ -1,0 +1,78 @@
+{
+    "fluentMethods": true,
+    "relationships": [],
+    "fields": [
+        {
+            "fieldName": "tglInput",
+            "fieldType": "ZonedDateTime"
+        },
+        {
+            "fieldName": "noHp",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "nama",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "pesan",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "tipe",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "tglSms",
+            "fieldType": "ZonedDateTime"
+        },
+        {
+            "fieldName": "com",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "report",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "trx",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "posting",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "ref",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "msisdn",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "enginename",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "ip",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "typemsg",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "idMember",
+            "fieldType": "String"
+        }
+    ],
+    "changelogDate": "20170904090819",
+    "dto": "no",
+    "service": "serviceImpl",
+    "entityTableName": "sms_history",
+    "jpaMetamodelFiltering": true,
+    "pagination": "pager",
+    "microserviceName": "ayoapp",
+    "searchEngine": "elasticsearch"
+}

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+   <changeSet author="dwidasa (generated)" id="1504353040320-1">
+      <addColumn tableName="member_hp">
+         <column name="member_id" type="bigint"/>
+      </addColumn>
+   </changeSet>
+   <changeSet author="dwidasa (generated)" id="1504353040320-2">
+      <addForeignKeyConstraint baseColumnNames="member_id"
+                               baseTableName="member_hp"
+                               constraintName="FK89co7wdotigrudsa7s55osjh5"
+                               deferrable="false"
+                               initiallyDeferred="false"
+                               referencedColumnNames="id"
+                               referencedTableName="member"/>
+   </changeSet>
+   <changeSet author="dwidasa (generated)" id="1504353040320-3">
+      <dropForeignKeyConstraint baseTableName="member_hp" constraintName="fk_member_hp_member_id"/>
+   </changeSet>
+   <changeSet author="dwidasa (generated)" id="1504353040320-4">
+      <dropDefaultValue columnDataType="varchar(255)" columnName="hp" tableName="member_hp"/>
+   </changeSet>
+   <changeSet author="dwidasa (generated)" id="1504353040320-5">
+      <dropDefaultValue columnDataType="varchar(255)"
+                        columnName="id_member"
+                        tableName="member_hp"/>
+   </changeSet>
+</databaseChangeLog>

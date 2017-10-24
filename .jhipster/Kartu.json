@@ -1,0 +1,34 @@
+{
+    "fluentMethods": true,
+    "relationships": [],
+    "fields": [
+        {
+            "fieldName": "idKartu",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "nama",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "idOperator",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "cekHlr",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "ketkartu",
+            "fieldType": "String"
+        }
+    ],
+    "changelogDate": "20170904063551",
+    "dto": "no",
+    "service": "serviceImpl",
+    "entityTableName": "kartu",
+    "jpaMetamodelFiltering": true,
+    "pagination": "pager",
+    "microserviceName": "ayoapp",
+    "searchEngine": "elasticsearch"
+}

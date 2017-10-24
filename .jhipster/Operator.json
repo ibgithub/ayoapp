@@ -1,0 +1,22 @@
+{
+    "fluentMethods": true,
+    "relationships": [],
+    "fields": [
+        {
+            "fieldName": "idOperator",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "nama",
+            "fieldType": "String"
+        }
+    ],
+    "changelogDate": "20170904013156",
+    "dto": "no",
+    "service": "serviceImpl",
+    "entityTableName": "operator",
+    "jpaMetamodelFiltering": false,
+    "pagination": "pager",
+    "microserviceName": "ayoapp",
+    "searchEngine": "elasticsearch"
+}

@@ -1,0 +1,22 @@
+{
+    "fluentMethods": true,
+    "relationships": [],
+    "fields": [
+        {
+            "fieldName": "kodeLevel",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "nama",
+            "fieldType": "String"
+        }
+    ],
+    "changelogDate": "20170904012938",
+    "dto": "no",
+    "service": "serviceImpl",
+    "entityTableName": "level_member",
+    "jpaMetamodelFiltering": false,
+    "pagination": "pager",
+    "microserviceName": "ayoapp",
+    "searchEngine": "elasticsearch"
+}

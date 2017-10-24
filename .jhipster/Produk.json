@@ -1,0 +1,131 @@
+{
+    "fluentMethods": true,
+    "relationships": [],
+    "fields": [
+        {
+            "fieldName": "idProduk",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "kodeProduk",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "idKartu",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "denom",
+            "fieldType": "BigDecimal"
+        },
+        {
+            "fieldName": "hpp",
+            "fieldType": "BigDecimal"
+        },
+        {
+            "fieldName": "hargaMan",
+            "fieldType": "BigDecimal"
+        },
+        {
+            "fieldName": "status",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "gangguan",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "idDistributor",
+            "fieldType": "Long"
+        },
+        {
+            "fieldName": "fisik",
+            "fieldType": "Integer",
+            "fieldValidateRules": []
+        },
+        {
+            "fieldName": "tglUpdate",
+            "fieldType": "ZonedDateTime"
+        },
+        {
+            "fieldName": "userUpdate",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "idDistributor2",
+            "fieldType": "Long"
+        },
+        {
+            "fieldName": "konversiSaldo",
+            "fieldType": "BigDecimal"
+        },
+        {
+            "fieldName": "isreport",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "issplit",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "ototimeopen",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "ototimeclose",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "idDistributor3",
+            "fieldType": "Long"
+        },
+        {
+            "fieldName": "isstok",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "otoclosestatus",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "saldoMin",
+            "fieldType": "BigDecimal"
+        },
+        {
+            "fieldName": "akses",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "hlr",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "isulang",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "isurut",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "formatppob",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "jenisppob",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "ketproduk",
+            "fieldType": "String"
+        }
+    ],
+    "changelogDate": "20170904070756",
+    "dto": "no",
+    "service": "serviceImpl",
+    "entityTableName": "produk",
+    "jpaMetamodelFiltering": true,
+    "pagination": "pager",
+    "microserviceName": "ayoapp",
+    "searchEngine": "elasticsearch"
+}

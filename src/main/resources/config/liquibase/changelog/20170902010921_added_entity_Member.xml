@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd
+                        http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+
+    <property name="now" value="now()" dbms="h2"/>
+
+    <property name="now" value="now()" dbms="mysql"/>
+    <property name="autoIncrement" value="true"/>
+
+    <property name="floatType" value="float4" dbms="postgresql, h2"/>
+    <property name="floatType" value="float" dbms="mysql, oracle, mssql"/>
+
+    <!--
+        Added the entity Member.
+    -->
+    <changeSet id="20170902010921-1" author="jhipster">
+        <createTable tableName="member">
+            <column name="id" type="bigint" autoIncrement="${autoIncrement}">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="id_member" type="varchar(255)">
+                <constraints nullable="false" />
+            </column>
+
+            <column name="tgl_register" type="date">
+                <constraints nullable="false" />
+            </column>
+
+            <column name="nama" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="alamat" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="pin" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="status" type="integer">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="saldo" type="decimal(10,2)">
+                <constraints nullable="false" />
+            </column>
+
+            <column name="id_upline" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="kode_level" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="tgl_input" type="timestamp">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="user_input" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="tgl_update" type="timestamp">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="user_update" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="id_master" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="rpt_trx" type="integer">
+                <constraints nullable="false" />
+            </column>
+
+            <column name="selisih" type="decimal(10,2)">
+                <constraints nullable="false" />
+            </column>
+
+            <column name="counter" type="integer">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="dongle_no" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="head_2_head" type="integer">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="ymid" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="iprpt" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="last_trx" type="timestamp">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="jhi_ref" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="crypt" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="gtalkid" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="vremsgid" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="kodepos" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="iswarn" type="integer">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="msnid" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="idlogsal" type="bigint">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="last_kodetrx" type="bigint">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="last_idtrx" type="bigint">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="telebotid" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="telegramid" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="isowner" type="bigint">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="cryptowner" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="pinowner" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+
+            <!-- jhipster-needle-liquibase-add-column - JHipster will add columns here, do not remove-->
+        </createTable>
+        <dropDefaultValue tableName="member" columnName="tgl_input" columnDataType="datetime"/>
+        <dropDefaultValue tableName="member" columnName="tgl_update" columnDataType="datetime"/>
+        <dropDefaultValue tableName="member" columnName="last_trx" columnDataType="datetime"/>
+        
+    </changeSet>
+    <!-- jhipster-needle-liquibase-add-changeset - JHipster will add changesets here, do not remove-->
+</databaseChangeLog>

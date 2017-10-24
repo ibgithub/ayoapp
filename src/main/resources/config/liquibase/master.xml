@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+
+    <include file="config/liquibase/changelog/00000000000000_initial_schema.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20170902010921_added_entity_Member.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20170902013102_added_entity_MemberHp.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20170904011456_added_entity_Denom.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20170904012938_added_entity_LevelMember.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20170904013156_added_entity_Operator.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20170904015454_added_entity_Distributor.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20170904015628_added_entity_Koneksi.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20170904063551_added_entity_Kartu.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20170904070756_added_entity_Produk.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20170904082123_added_entity_Harga.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20170904083226_added_entity_LogSaldo.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20170904085030_added_entity_Transaksi.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20170904090048_added_entity_TransaksiPulsa.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20170904090407_added_entity_Rebate.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20170904090819_added_entity_SmsHistory.xml" relativeToChangelogFile="false"/>
+    <!-- jhipster-needle-liquibase-add-changelog - JHipster will add liquibase changelogs here -->
+    <include file="config/liquibase/changelog/20170902013102_added_entity_constraints_MemberHp.xml" relativeToChangelogFile="false"/>
+    <!-- jhipster-needle-liquibase-add-constraints-changelog - JHipster will add liquibase constraints changelogs here -->
+</databaseChangeLog>
